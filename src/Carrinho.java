@@ -10,6 +10,7 @@ public class Carrinho {
 
     public void adicionarItem(Item item) {
         items.add(item);
+        System.out.println(item.getNome()+" adicionado com sucesso!");
     }
 
     public void removerItem(Item item) {
