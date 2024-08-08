@@ -13,9 +13,9 @@ public class Carrinho {
         System.out.println(item.getNome()+" adicionado com sucesso!");
     }
 
-    public void removerItem(Item item) {
+    public void removerItem(int item) {
         for (int i = 0; i < items.size(); i++) {
-            if (items.get(i).getCodigo() == item.getCodigo()) {
+            if (items.get(i).getCodigo() == item) {
                 System.out.println(items.get(i).getNome()+" removido com sucesso");
                 items.remove(i);
             }
